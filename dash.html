@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/dash.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font">
+   <link rel="stylesheet" href="css/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <h2>GESTISEP</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">
+                            <h2>Article</h2>
+                        </span>
+                </li>
+                <li>
+                    <a href="client.html">
+                        <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">
+                            <h2>Client</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">
+                            <h2>Fournisseurs</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-in-alt" aria-hidden="true"></i></span>
+                        <span class="title">
+                            <h2>Entree</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sorti.html">
+                        <span class="icon"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span>
+                        <span class="title">
+                            <h2>Sortis</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">
+                            <h2>Deconnection</h2>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toogleMenu();">
+                </div>
+                
+            </div>
+            <a href="#">
+                <button type="button" class="btn m-3 fa fa-plus">nouveau Article</button></a>
+          
+        </div>
+    </div>
+    <script >
+    function toogleMenu()
+    {
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+    
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>

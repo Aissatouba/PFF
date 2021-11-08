@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(135deg,#5D3D23,#D2AF77);
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .input-box span{
+    color: #D2AF77;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: #D2AF77;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width:70px;
+    background: linear-gradient(135deg,#5D3D23,#D2AF77);
+}
+.container form .article-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+form .article-details .input-box{
+    margin-bottom: 15px;
+
+    width: calc(100% / 2 - 20px);
+}
+.article-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.article-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #5D3D23;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.article-details .input-box input .input-text{
+    color: #D2AF77;
+}
+.article-details .input-box input:focus
+.article-details .input-box input:valid{
+    border-color: #D2AF77;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #D2AF77;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#5D3D23,#D2AF77);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#5D3D23,#D2AF77);
+}
+@media(max-width:584px){
+    .container{max-width: 100%;
+    }
+    form .article-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .article-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .article-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
